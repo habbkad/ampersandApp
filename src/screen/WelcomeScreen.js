@@ -21,7 +21,11 @@ const WelcomeScreen = ({ navigation }) => {
         </Text>
       </View>
       <View style={styles.btnCon}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate("signUp");
+          }}
+        >
           <Text style={{ borderBottomWidth: 1, borderBottomColor: "black" }}>
             REGISTER
           </Text>
